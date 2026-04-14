@@ -13,7 +13,7 @@ export const ApiProvider = ({ children }) => {
 
   const fetchRealApis = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/apis');
+      const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/apis`);
       
     
       const realData = response.data.map(api => ({
@@ -64,7 +64,7 @@ export const ApiProvider = ({ children }) => {
 
   const addApi = async (newApi) => {
     try {
-      await axios.post('http://localhost:8080/api/apis', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/apis`, {
         url: newApi.url,
         method: newApi.method || 'GET',
         name: newApi.name

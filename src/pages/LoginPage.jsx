@@ -19,7 +19,7 @@ const LoginPage = () => {
 
     try {
       // 1. Backend API call (UserController /login endpoint)
-      const response = await axios.post('http://localhost:8080/api/users/login', {
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/users/login`, {
         email: formData.email,
         password: formData.password
       });

@@ -4,7 +4,6 @@ import {
   Tooltip, ResponsiveContainer, LineChart, Line 
 } from 'recharts';
 
-// Mock Data: Real project mein ye backend se aayega
 const data = [
   { time: '10:00', ms: 45, uptime: 100 },
   { time: '12:00', ms: 52, uptime: 99 },

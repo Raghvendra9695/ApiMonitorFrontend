@@ -13,7 +13,7 @@ const RegisterPage = () => {
     setLoading(true);
     try {
       
-      await axios.post('http://localhost:8080/api/users/register', formData);
+      
       alert("Registration Successful! Now please login.");
       navigate('/login');
     } catch (err) {
