@@ -39,4 +39,4 @@ const Logs = () => {
   );
 };
 
-export default Logs; // YAHI LINE MISSING THI!
+export default Logs;

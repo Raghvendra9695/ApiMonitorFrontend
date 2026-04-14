@@ -8,10 +8,10 @@ import LandingPage from './pages/LandingPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 
-// Ye chota sa component check karega ki Sidebar dikhana hai ya nahi
+
 const LayoutWrapper = ({ children }) => {
   const location = useLocation();
-  // In pages par Sidebar NAHI dikhega
+  
   const noSidebarPages = ["/", "/login", "/register"];
   const showSidebar = !noSidebarPages.includes(location.pathname);
 
